@@ -1,0 +1,6 @@
+.idea
+.vscode
+**/node_modules
+*.log
+*.orig
+/cypress/reports/
