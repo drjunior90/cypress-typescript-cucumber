@@ -15,9 +15,13 @@ const plugins = (on: PluginEvents, config: PluginConfigOptions): void => {
   on("file:preprocessor", cucumber(options));
 
   on("after:run", (result: CypressRunResult) => {
+    const projectName = "Todo App";
     report.generate({
       jsonDir: "cypress/reports/cucumber/json/",
       reportPath: "cypress/reports/cucumber/",
+      displayDuration: true,
+      reportName: projectName,
+      pageTitle: projectName,
       metadata: {
         browser: {
           name: result.browserName,
@@ -32,8 +36,9 @@ const plugins = (on: PluginEvents, config: PluginConfigOptions): void => {
       customData: {
         title: "Run info",
         data: [
-          { label: "Project", value: "Todo App" },
-          { label: "Release", value: "latest" },
+          { label: "Project", value: projectName },
+          { label: "Browser", value: result.browserName },
+          { label: "Browser version", value: result.browserVersion },
           { label: "Execution Start Time", value: result.startedTestsAt },
           { label: "Execution End Time", value: result.endedTestsAt },
         ],
