@@ -24,6 +24,8 @@
     "cy-open": "cypress open --config baseUrl=https://todomvc.com/examples/react/#/",
     "cy-run": "cypress run --config baseUrl=https://todomvc.com/examples/react/#/",
     "cy-run:chrome": "cypress run --headless --browser chrome --config baseUrl=https://todomvc.com/examples/react/#/",
+    "cy-run:edge": "cypress run --headless --browser edge --config baseUrl=https://todomvc.com/examples/react/#/",
+    "cy-run:firefox": "cypress run --headless --browser firefox --config baseUrl=https://todomvc.com/examples/react/#/",
     "lint": "./node_modules/.bin/eslint src/**"
   },
   "cypress-cucumber-preprocessor": {

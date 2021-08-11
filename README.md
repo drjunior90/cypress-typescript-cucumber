@@ -56,6 +56,8 @@ The following commands are available:
 | `yarn cy-open`        | run tests in visual mode with Cypress Test Runner                 |
 | `yarn cy-run`         | run tests in electron in headless mode and generates test report  |
 | `yarn cy-run:chrome`  | run tests in chrome in headless mode and generates test report    |
+| `yarn cy-run:edge`    | run tests in edge in headless mode and generates test report      |
+| `yarn cy-run:firefox` | run tests in firefox in headless mode and generates test report   |
 
 ## Test Results
 
