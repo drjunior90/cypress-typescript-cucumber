@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a sample project for getting started with Cypress, Typescript and Cucumber. The tests created for
+This is a sample project for getting started with Cypress, Typescript and Cucumber. The acceptance tests created for
 the [Todo App](https://todomvc.com/examples/react/#/) are documented as scenarios in feature files with Cucumber:
 
 * Feature files describing the scenarios can be found in: `/src/features`
